@@ -1,4 +1,14 @@
 ---
--name: nfs_server
+-name: this is my first playbook
  hosts: all
- vars: 
+ tasks:
+  -name: installing httpd packages
+   yum: 
+      name: httpd
+      state: installed
+
+-name: starting the service 
+ service:
+    name: httpd
+    state: started
+  
