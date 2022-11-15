@@ -1,0 +1,4 @@
+---
+-name: nfs_server
+ hosts: all
+ vars: 
