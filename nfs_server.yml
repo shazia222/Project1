@@ -1,7 +1,7 @@
 ---
 -name: this is my first playbook
  hosts: all
- become: yes
+ become:
  become_user: root
  tasks:
   -name: creating a user
