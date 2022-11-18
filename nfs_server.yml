@@ -1,14 +1,11 @@
 ---
 -name: this is my first playbook
  hosts: all
+ become: yes
+ become_user: root
  tasks:
-  -name: installing httpd packages
-   yum: 
-      name: httpd
-      state: installed
-
--name: starting the service 
- service:
-    name: httpd
-    state: started
+  -name: creating a user
+   user: 
+    name: mango
+    state: present 
   
